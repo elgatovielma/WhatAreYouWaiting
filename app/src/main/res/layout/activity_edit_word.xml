@@ -83,7 +83,7 @@ limitations under the License. -->
             android:text="@string/marque_si_termino_la_tarea"
             android:textColor="@color/colortextview"
             android:layout_margin="@dimen/margen"/>
-        
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

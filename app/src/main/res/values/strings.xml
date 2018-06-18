@@ -28,4 +28,8 @@ limitations under the License. -->
     <string name="fecha">FECHA</string>
     <string name="hora">HORA</string>
     <string name="marque_si_termino_la_tarea">Marque si termino la tarea:</string>
+    <string name="tarea">TAREA</string>
+    <string name="horam">Horam</string>
+    <string name="fecham">fecham</string>
+    <string name="completada">Completada</string>
 </resources>

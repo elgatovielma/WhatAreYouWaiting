@@ -19,5 +19,7 @@ limitations under the License. -->
     <color name="colorAccent">#FF4081</color>
     <color name="buttonLabel">#d3d3d3</color>
     <color name="colortextview">#FC4F17</color>
+    <color name="tareacolor">#F91D1D</color>
+    <color name="tareaterminadacolor">#3BD809</color>
 
 </resources>
