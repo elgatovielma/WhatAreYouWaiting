@@ -23,6 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -43,12 +44,13 @@ public class MainActivity extends AppCompatActivity {
     private WordListAdapter mAdapter;
 
     private WordListOpenHelper mDB;
+    private  WordItem mPruebas;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mPruebas = new WordItem();
         mDB = new WordListOpenHelper(this);
 
         // Create recycler view.
@@ -78,12 +80,26 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == WORD_EDIT) {
             if (resultCode == RESULT_OK) {
+
                 String word = data.getStringExtra(EditWordActivity.EXTRA_REPLY);
+                String fecha = data.getStringExtra(EditWordActivity.EXTRA_REPLY_FECHA);
+                String tiempo = data.getStringExtra(EditWordActivity.EXTRA_REPLY_TIEMPO);
+                Boolean verificar = data.getBooleanExtra("HOLA",false);
+                String[] informacion = {word,fecha,tiempo};
 
                 if (!TextUtils.isEmpty(word)) {
+
+                    if(verificar){
+                        //Intent inte = new Intent(getBaseContext(), completedTasks.class);
+                        //startActivity(inte);
+                    }
+
+                    Log.d(TAG,"VERIFICAR: " + verificar.toString());
                     int id = data.getIntExtra(WordListAdapter.EXTRA_ID, -99);
                     if (id == WORD_ADD) {
-                        mDB.insert(word);
+                        Log.d(TAG,"FECHA creada" + fecha);
+                        Log.d(TAG,"FECHA creada2: " + mPruebas.getDay());
+                        mDB.insert(informacion);
                     }
                     mAdapter.notifyDataSetChanged();
                 }

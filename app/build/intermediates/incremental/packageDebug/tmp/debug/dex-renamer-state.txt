@@ -1,4 +1,4 @@
-#Fri Jun 15 12:26:18 VET 2018
+#Fri Jun 22 18:24:20 VET 2018
 base.0=C\:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

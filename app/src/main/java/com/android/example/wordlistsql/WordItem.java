@@ -4,6 +4,8 @@ public class WordItem {
 
     private int mId;
     private String mWord;
+    private String mDay;
+    private String mHour;
 
     public WordItem() { }
 
@@ -21,5 +23,21 @@ public class WordItem {
 
     public void setWord(String mWord) {
         this.mWord = mWord;
+    }
+
+    public String getDay() {
+        return mDay;
+    }
+
+    public void setDay(String mDay) {
+        this.mDay = mDay;
+    }
+
+    public String getHour() {
+        return mHour;
+    }
+
+    public void setHour(String mHour) {
+        this.mHour = mHour;
     }
 }

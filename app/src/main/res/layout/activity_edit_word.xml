@@ -90,10 +90,18 @@ limitations under the License. -->
             android:layout_margin="@dimen/margen"
             android:id="@+id/idcheckbox"/>
 
+
+
     </LinearLayout>
 
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Agregar"
+        android:onClick="returnReply"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>

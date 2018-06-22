@@ -13,22 +13,44 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
     private static final String TAG = WordListOpenHelper.class.getSimpleName();
     // has to be 1 first time or app will crash
     private static final int DATABASE_VERSION = 1;
-    private static final String WORD_LIST_TABLE = "word_entries";
-    private static final String DATABASE_NAME = "wordlist";
+    private static final String WORD_LIST_TABLE = "entradasColumnas";
+    private static final String DATABASE_NAME = "nombreDB";
 
     // Column names...
     public static final String KEY_ID = "_id";
-    public static final String KEY_WORD = "word";
+    public static final String KEY_WORD = "task";
+    public static final String KEY_DAY = "day";
+    public static final String KEY_HOUR = "hour";
+
 
     // ... and a string array of columns.
-    private static final String[] COLUMNS = { KEY_ID, KEY_WORD };
+   // private static final String[] COLUMNS = { KEY_ID, KEY_WORD,KEY_DAY,KEY_HOUR };
+    private static final String[] COLUMNS = { KEY_ID,KEY_WORD,KEY_HOUR,KEY_DAY};
+    /**
+    private static final String WORD_LIST_TABLE_CREATE = "CREATE TABLE " + WORD_LIST_TABLE +
+            " (" + KEY_ID + " INTEGER PRIMARY KEY, " +
+            // id will auto-increment if no value passed
+             KEY_DAY + " TEXT, " +
+            KEY_HOUR + " TEXT, " +
+             KEY_WORD + " TEXT );";
+     */
+    private static final  String WORD_LIST_TABLE_CREATE =  "CREATE TABLE " + WORD_LIST_TABLE + " ("
+            +  KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + KEY_WORD + " TEXT NOT NULL, "
+            + KEY_HOUR + " TEXT NOT NULL, "
+            + KEY_DAY + " TEXT NOT NULL);";
+
+
 
     // Build the SQL query that creates the table.
-    private static final String WORD_LIST_TABLE_CREATE =
+    /**private static final String WORD_LIST_TABLE_CREATE =
             "CREATE TABLE " + WORD_LIST_TABLE + " (" +
                     KEY_ID + " INTEGER PRIMARY KEY, " +
                     // id will auto-increment if no value passed
-                    KEY_WORD + " TEXT );";
+                    KEY_WORD + "TEXT, " +
+                    KEY_DAY + "TEXT, " +
+                    KEY_HOUR + "TEXT );";
+     */
 
     private SQLiteDatabase mWritableDB;
     private SQLiteDatabase mReadableDB;
@@ -39,7 +61,6 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(WORD_LIST_TABLE_CREATE);
-        fillDatabaseWithData(db);
     }
 
     @Override
@@ -50,24 +71,11 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    private void fillDatabaseWithData(SQLiteDatabase db) {
-        String[] words = {"Android", "Adapter", "ListView", "AsyncTask", "Android Studio",
-                "SQLiteDatabase", "SQLOpenHelper", "Data model", "ViewHolder",
-                "Android Performance", "OnClickListener"};
 
-        ContentValues values = new ContentValues();
-
-        for (int i=0; i < words.length; i++) {
-            // Put column/value pairs into the container.
-            // put() overrides existing values.
-            values.put(KEY_WORD, words[i]);
-            db.insert(WORD_LIST_TABLE, null, values);
-        }
-    }
 
     public WordItem query(int position) {
-        String query = "SELECT * FROM " + WORD_LIST_TABLE + " ORDER BY "
-                + KEY_WORD + " ASC " + "LIMIT " + position + ",1";
+        String query = "SELECT * FROM " + WORD_LIST_TABLE +
+                " ORDER BY " + KEY_WORD + " ASC " + "LIMIT " + position + ",1";
 
         Cursor cursor = null;
         WordItem entry = new WordItem();
@@ -76,12 +84,15 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
             if (mReadableDB == null) {
                 mReadableDB = getReadableDatabase();
             }
-            cursor = mReadableDB.rawQuery(query, null);
+            cursor = mReadableDB.rawQuery(query,null);
             cursor.moveToFirst();
+
 
             entry.setId(cursor.getInt(cursor.getColumnIndex(KEY_ID)));
             entry.setWord(cursor.getString(cursor.getColumnIndex(KEY_WORD)));
-
+            entry.setDay(cursor.getString(cursor.getColumnIndex(KEY_DAY)));
+            entry.setHour(cursor.getString(cursor.getColumnIndex(KEY_HOUR)));
+            Log.d(TAG,"SET HOUR: " + cursor.getString(cursor.getColumnIndex(KEY_HOUR)));
         }
 
         catch (Exception e) {
@@ -94,12 +105,14 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
         }
     }
 
-    public long insert(String word){
+    public long insert(String[] informacion){
 
         long newId = 0;
 
         ContentValues values = new ContentValues();
-        values.put(KEY_WORD, word);
+        values.put(KEY_WORD, informacion[0]);
+        values.put(KEY_DAY, informacion[1]);
+        values.put(KEY_HOUR, informacion[2]);
 
         try {
             if (mWritableDB == null) {

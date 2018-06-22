@@ -19,8 +19,18 @@ package com.android.example.wordlistsql;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+
 
 
 /**
@@ -34,9 +44,15 @@ public class EditWordActivity extends AppCompatActivity {
     private static final String NO_WORD = "";
 
     private EditText mEditWordView;
+    private TextView mFecha;
+    private TextView mTiempo;
+    private CheckBox mCheck;
 
     // Unique tag for the intent reply.
     public static final String EXTRA_REPLY = "com.example.android.wordlistsql.REPLY";
+    public static final String EXTRA_REPLY_TIEMPO = "com.example.android.wordlistsql.TIEMPO";
+    public static final String EXTRA_REPLY_FECHA = "com.example.android.wordlistsql.FECHA";
+    public static final String EXTRA_REPLY_CHECK = "com.example.android.wordlistsql.CHECK";
 
     int mId = MainActivity.WORD_ADD;
 
@@ -45,7 +61,15 @@ public class EditWordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_word);
 
-        mEditWordView = (EditText) findViewById(R.id.edit_word);
+        mEditWordView = (EditText) findViewById(R.id.tareainsertada);
+        mFecha = (TextView) findViewById(R.id.fechacreada);
+        mTiempo = (TextView) findViewById(R.id.horacreada);
+        mCheck = (CheckBox) findViewById(R.id.idcheckbox);
+
+        String creacionFecha = creacionFecha();
+        String creacionTiempo = creacionTiempo();
+        mFecha.setText(creacionFecha);
+        mTiempo.setText(creacionTiempo);
 
         // Get data sent from calling activity.
         Bundle extras = getIntent().getExtras();
@@ -61,19 +85,54 @@ public class EditWordActivity extends AppCompatActivity {
         } // Otherwise, start with empty fields.
     }
 
+
     /**
      *  Click handler for the Save button.
      *  Creates a new intent for the reply, adds the reply message to it as an extra,
      *  sets the intent result, and closes the activity.
      */
     public void returnReply(View view) {
-        String word = ((EditText) findViewById(R.id.edit_word)).getText().toString();
+        String word = ((EditText) findViewById(R.id.tareainsertada)).getText().toString();
+        String fecha = ((TextView) findViewById(R.id.fechacreada)).getText().toString();
+        String tiempo = ((TextView) findViewById(R.id.horacreada)).getText().toString();
 
+        if (mCheck.isChecked()){
+            Toast.makeText( getApplicationContext(),
+                    "Check works", Toast.LENGTH_SHORT).show();
+            //Intent replyIntent = new Intent();
+
+            //setResult(RESULT_OK, replyIntent);
+        }
+
+        Boolean check = mCheck.isChecked();
+        Log.d(TAG,"VERIFICAR2: " + check.toString());
         Intent replyIntent = new Intent();
+        replyIntent.putExtra("HOLA", check);
         replyIntent.putExtra(EXTRA_REPLY, word);
+        replyIntent.putExtra(EXTRA_REPLY_FECHA, fecha);
+        replyIntent.putExtra(EXTRA_REPLY_TIEMPO, tiempo);
         replyIntent.putExtra(WordListAdapter.EXTRA_ID, mId);
         setResult(RESULT_OK, replyIntent);
         finish();
     }
+
+
+    private String creacionTiempo() {
+
+        Date dt = new Date();
+        int hours = dt.getHours();
+        int minutes = dt.getMinutes();
+        String tiempoActual= hours + ":" + minutes;
+        return  tiempoActual;
+    }
+
+    private String creacionFecha() {
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat mdformat = new SimpleDateFormat("dd/MM/yyyy");
+        String fechaActual =  mdformat.format(calendar.getTime());
+
+        return  fechaActual;
+    }
+
 }
 
