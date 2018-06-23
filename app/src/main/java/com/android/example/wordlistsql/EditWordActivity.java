@@ -96,18 +96,16 @@ public class EditWordActivity extends AppCompatActivity {
         String fecha = ((TextView) findViewById(R.id.fechacreada)).getText().toString();
         String tiempo = ((TextView) findViewById(R.id.horacreada)).getText().toString();
 
+
+
         if (mCheck.isChecked()){
             Toast.makeText( getApplicationContext(),
                     "Check works", Toast.LENGTH_SHORT).show();
-            //Intent replyIntent = new Intent();
 
-            //setResult(RESULT_OK, replyIntent);
         }
 
-        Boolean check = mCheck.isChecked();
-        Log.d(TAG,"VERIFICAR2: " + check.toString());
         Intent replyIntent = new Intent();
-        replyIntent.putExtra("HOLA", check);
+        replyIntent.putExtra("HOLA",  mCheck.isChecked());
         replyIntent.putExtra(EXTRA_REPLY, word);
         replyIntent.putExtra(EXTRA_REPLY_FECHA, fecha);
         replyIntent.putExtra(EXTRA_REPLY_TIEMPO, tiempo);

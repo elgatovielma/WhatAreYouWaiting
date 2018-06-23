@@ -1,38 +1,41 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
+ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
 MERGED from [com.android.support:design:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\design-24.1.1.aar\802ea4f0c194786464e41ef9f647205f\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.1.1.aar\a71e89c4b6026aff0062a20488c4f9b1\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:recyclerview-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.1.1.aar\8eaf538244beaacc75bea923a015dfc0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\386d7b9d8d4fed8c2edbb4749cb1b437\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.1.1.aar\ca50934bc4d32975d97435503f4a3ff4\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.1.1.aar\04992fdc3f19a6e8453ce68903839647\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:support-v4:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\bd45522d9e81f92d281a073c27ac7969\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
-INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
+INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
 	package
 		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:17:5-46
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
+		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-35:12
+		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:1-36:12
 		INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:16:11-69
 application
-ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:19:5-33:19
+ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:19:5-34:19
 MERGED from [com.android.support:design:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\design-24.1.1.aar\802ea4f0c194786464e41ef9f647205f\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\design-24.1.1.aar\802ea4f0c194786464e41ef9f647205f\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.1.1.aar\a71e89c4b6026aff0062a20488c4f9b1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.1.1.aar\a71e89c4b6026aff0062a20488c4f9b1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\386d7b9d8d4fed8c2edbb4749cb1b437\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\386d7b9d8d4fed8c2edbb4749cb1b437\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.1.1.aar\ca50934bc4d32975d97435503f4a3ff4\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.1.1.aar\ca50934bc4d32975d97435503f4a3ff4\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.1.1.aar\04992fdc3f19a6e8453ce68903839647\AndroidManifest.xml:23:5-20
@@ -67,6 +70,10 @@ activity#com.android.example.wordlistsql.EditWordActivity
 ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:32:9-54
 	android:name
 		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:32:19-51
+activity#com.android.example.wordlistsql.completedTasks
+ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:33:9-61
+	android:name
+		ADDED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml:33:19-49
 uses-sdk
 INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\USER\Desktop\the last one\Electiva Android\WhatAreYouWaiting\app\src\main\AndroidManifest.xml
@@ -77,6 +84,8 @@ MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\USER\.gradle\cach
 MERGED from [com.android.support:appcompat-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.1.1.aar\a71e89c4b6026aff0062a20488c4f9b1\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:recyclerview-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.1.1.aar\8eaf538244beaacc75bea923a015dfc0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.1.1.aar\8eaf538244beaacc75bea923a015dfc0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\386d7b9d8d4fed8c2edbb4749cb1b437\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\386d7b9d8d4fed8c2edbb4749cb1b437\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.1.1.aar\ca50934bc4d32975d97435503f4a3ff4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.1.1.aar\ca50934bc4d32975d97435503f4a3ff4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:24.1.1] C:\Users\USER\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.1.1.aar\04992fdc3f19a6e8453ce68903839647\AndroidManifest.xml:21:5-43

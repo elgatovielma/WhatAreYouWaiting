@@ -90,18 +90,18 @@ public class MainActivity extends AppCompatActivity {
                 if (!TextUtils.isEmpty(word)) {
 
                     if(verificar){
-                        //Intent inte = new Intent(getBaseContext(), completedTasks.class);
-                        //startActivity(inte);
+                        Intent inte = new Intent(getBaseContext(), completedTasks.class);
+                        startActivity(inte);
+                    }
+                    else{
+                        int id = data.getIntExtra(WordListAdapter.EXTRA_ID, -99);
+                        if (id == WORD_ADD) {
+
+                            mDB.insert(informacion);
+                        }
+                        mAdapter.notifyDataSetChanged();
                     }
 
-                    Log.d(TAG,"VERIFICAR: " + verificar.toString());
-                    int id = data.getIntExtra(WordListAdapter.EXTRA_ID, -99);
-                    if (id == WORD_ADD) {
-                        Log.d(TAG,"FECHA creada" + fecha);
-                        Log.d(TAG,"FECHA creada2: " + mPruebas.getDay());
-                        mDB.insert(informacion);
-                    }
-                    mAdapter.notifyDataSetChanged();
                 }
                 else {
                     Toast.makeText( getApplicationContext(),

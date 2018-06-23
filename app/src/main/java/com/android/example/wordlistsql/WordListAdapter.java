@@ -17,6 +17,7 @@
 package com.android.example.wordlistsql;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,15 +25,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Implements a simple Adapter for a RecyclerView.
  * Demonstrates how to add a click handler for each item in the ViewHolder.
  */
-public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordViewHolder> {
+public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordViewHolder>  {
 
     WordListOpenHelper mDB;
+
 
 
     /**
@@ -80,15 +87,35 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     @Override
     public void onBindViewHolder(WordViewHolder holder, int position) {
         WordItem current = mDB.query(position);
-
         holder.wordItemView.setText(current.getWord());
         holder.fechaItemView.setText(current.getDay());
         holder.horaItemView.setText(current.getHour());
 
+
         // Keep a reference to the view holder for the click listener
-        //final WordViewHolder h = holder; // needs to be final for use in callback
+        final WordViewHolder h = holder; // needs to be final for use in callback
 
         // Attach a click listener to the DELETE button.
+
+        holder.checkBoxItemView.setOnCheckedChangeListener(new MyButtonOnClickListener
+                (current.getId(),null) {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    Toast.makeText( buttonView.getContext(),
+                            "Check super works!!", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(buttonView.getContext(), completedTasks.class);
+                    mContext.startActivity(i);
+                    h.checkBoxItemView.setChecked(false);
+
+                }
+
+            }
+        });
+
+
+
         /**
         holder.delete_button.setOnClickListener(
                 new MyButtonOnClickListener(current.getId(),null){
@@ -99,7 +126,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
                         if (deleted >= 0)
                             notifyItemRemoved(h.getAdapterPosition());
                     }
-        });   */
+        });  */
     }
 
     @Override

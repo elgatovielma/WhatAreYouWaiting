@@ -30,6 +30,7 @@ limitations under the License.
             </intent-filter>
         </activity>
         <activity android:name=".EditWordActivity" />
+        <activity android:name=".completedTasks"></activity>
     </application>
 
 </manifest>

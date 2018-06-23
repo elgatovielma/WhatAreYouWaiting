@@ -4,16 +4,16 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -92,20 +92,20 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1186,6 +1186,10 @@
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.1.1.aar\\a71e89c4b6026aff0062a20488c4f9b1\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_completed_tasks.xml.flat",
+        "source": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\src\\main\\res\\layout\\activity_completed_tasks.xml"
     },
     {
         "merged": "C:\\Users\\USER\\Desktop\\the last one\\Electiva Android\\WhatAreYouWaiting\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",

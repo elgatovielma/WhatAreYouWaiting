@@ -17,11 +17,14 @@
 package com.android.example.wordlistsql;
 
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 /**
  * Instantiated for the Edit and Delete buttons in WordListAdapter.
  */
-public class MyButtonOnClickListener implements View.OnClickListener {
+public class MyButtonOnClickListener implements View.OnClickListener, OnCheckedChangeListener{
+
     private static final String TAG = View.OnClickListener.class.getSimpleName();
 
     int id;
@@ -35,4 +38,10 @@ public class MyButtonOnClickListener implements View.OnClickListener {
     public void onClick(View v) {
         // Implemented in WordListAdapter
     }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        // Implemented in WordListAdapter
+    }
 }
+
